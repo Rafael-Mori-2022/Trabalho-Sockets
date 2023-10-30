@@ -6,7 +6,7 @@ Este documento tem como objetivo fornecer uma visão geral de uma implementaçã
 
  O cliente é estruturado em Node.js, enquanto o servidor é em Python. Um passo-a-passo do funcionamento do sistema é dado abaixo:
 
-- O cliente se conecta ao servidor através do protocolo TCP na porta 7777 (IP: localhost).
+- O cliente se conecta ao servidor através do protocolo TCP na porta 7777 (IP: {::1}).
 - O cliente escolhe entre três opções: baixar um arquivo (opção 1), enviar um arquivo (opção 2) ou sair (opção 3).
 - Caso o cliente escolha baixar um arquivo, ele fornece o nome do arquivo desejado, e o servidor verifica se o arquivo é existente. Em caso afirmativo, o servidor envia o arquivo para o cliente, que o salva localmente.
 - Caso o cliente escolha enviar um arquivo, ele fornece o nome do arquivo a ser enviado. O cliente verifica se o arquivo existe localmente e, se existir, envia o arquivo para o servidor.
@@ -21,6 +21,21 @@ Para testagem do sistema, é de suma importância que os arquivos testes estejam
 - `Cliente.js` (código do cliente em Node.js) 
 - `Servidor.py` (código do servidor em Python)
 
+## Instalação de Ambientes
+Para que seja viável o funcionamento do sistema implementado, é essencial que os ambientes de execução estejam devidamente acertados!
+<br>
+Assim sendo, seguem alguns tutoriais para que tudo esteja pronto:
+
+### NodeJs  
+- Windows: https://www.youtube.com/watch?v=-cLzUD0TQY0
+- Linux: https://github.com/nodesource/distributions
+- MacOs: https://www.youtube.com/watch?v=YLO1FBIxgW4
+
+### Python
+- Windows: https://www.youtube.com/watch?v=9_8YBRuC_ak
+- Linux: https://www.youtube.com/watch?v=72PJBhXFC8I
+- MacOs: https://www.youtube.com/watch?v=_5X7aY5Zxno
+
 ## Execução
 
 Siga os passos para testar o sistema de comunicação:
@@ -29,10 +44,10 @@ Siga os passos para testar o sistema de comunicação:
 
 2. Abra dois terminais separados, sendo possível a presença de várias instâncias de clientes.
 
-3. No primeiro terminal, execute o servidor Python com o seguinte comando:
+3. No primeiro terminal, execute o servidor Python com o seguinte comando <strong>(atenção a sua versão do Python)</strong>:
 
    ```bash
-   python Servidor.py
+   python Servidor.py 
 4. Nos próximos terminais, execute os clientes Node.js com o comando:
 
     ```bash
@@ -43,7 +58,7 @@ Siga os passos para testar o sistema de comunicação:
 ## Observações
 
 - Certifique-se de que o servidor esteja em execução antes de tentar se conectar com o cliente.
-- Em detrimento da organização em pastas, é possível que com a alteração do SO utilizado sejam necessárias simples alterações da localização dos inputs de teste (para dentro da pasta ou para fora)!
+- Em detrimento da organização do projeto em pastas, é possível que com a alteração do SO utilizado sejam necessárias simples alterações da localização dos inputs de teste (para dentro da pasta ou para fora)!
    - Windows: foi necessário que se deixasse os inputs do servidor para fora da pasta do servidor!
    - Linux: os inputs foram deixados dentro da pasta do servidor!
 - Este sistema de comunicação é destinado APENAS para fins de aprendizado e demonstração, não determinando o uso final de sockets em ambientes comerciais.
