@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 function iniciarConexao() {
   const client = new net.Socket()     // Cria um novo objeto de soquete para o cliente.
 
-  client.connect(7777, 'localhost', () => {
+  client.connect(7777, '::1', () => {
     console.log("Conectado ao Servidor!!\n") // Conecta ao servidor e exibe uma mensagem.
     listagemOpcoes(client)                   // Chama a função para mostrar opções.
   })

@@ -45,7 +45,7 @@ def solicitacaoCliente(connection, address):
             break
 
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
-server.bind(('localhost', 7777))  # Associa o servidor à porta 7777.
+server.bind(('::1', 7777))  # Associa o servidor à porta 7777.
 print("Conectando...\n")
 server.listen()
 

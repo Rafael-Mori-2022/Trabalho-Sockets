@@ -43,6 +43,9 @@ Siga os passos para testar o sistema de comunicação:
 ## Observações
 
 - Certifique-se de que o servidor esteja em execução antes de tentar se conectar com o cliente.
+- Em detrimento da organização em pastas, é possível que com a alteração do SO utilizado sejam necessárias simples alterações da localização dos inputs de teste (para dentro da pasta ou para fora)!
+   - Windows: foi necessário que se deixasse os inputs do servidor para fora da pasta do servidor!
+   - Linux: os inputs foram deixados dentro da pasta do servidor!
 - Este sistema de comunicação é destinado APENAS para fins de aprendizado e demonstração, não determinando o uso final de sockets em ambientes comerciais.
     
 - Código e documentação gerada por Rafael Mori Pinheiro (RA: 813851)
