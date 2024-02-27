@@ -63,4 +63,4 @@ Siga os passos para testar o sistema de comunicação:
    - Linux: os inputs foram deixados dentro da pasta do servidor!
 - Este sistema de comunicação é destinado APENAS para fins de aprendizado e demonstração, não determinando o uso final de sockets em ambientes comerciais.
     
-- Código e documentação gerada por Rafael Mori Pinheiro (RA: 813851)
+- Código e documentação gerada por Rafael Mori Pinheiro.
